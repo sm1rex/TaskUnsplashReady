@@ -1,0 +1,27 @@
+.imageGallery {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .imageGallery li {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageGallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+  }
+  
+  .imageGallery li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
